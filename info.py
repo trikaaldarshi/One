@@ -202,6 +202,7 @@ BAD_WORDS = {
 # ============================
 # Server & Web Configuration
 # ============================
+
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
@@ -228,7 +229,7 @@ if HAS_SSL:
     URL = "https://{}/".format(FQDN)
 else:
     URL = "http://{}/".format(FQDN)
-    
+
 # ============================
 # Reactions Configuration
 # ============================
